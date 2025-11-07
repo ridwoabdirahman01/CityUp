@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <title>Document</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+       
+     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+              header{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            /* background-color: black; */
+            color: black;
+            font-size: 20px;
+            align-items: center;
+            height: 25px;
+            font-size: 30px;
+             
+             
+        }
+        nav ul{
+             list-style: none;
+            display: flex;
+             
+            gap: 25px;
+            
+        }
+          
+         .logo:hover{
+            color: var(--primary-color);
+         }
+          nav li a {
+                        text-decoration-line: none;
+         }
+          
+         .Home a {
+            text-decoration: none;
+            text-decoration-line: none;
+            color: #e86ed0;
+        }  
+        
+         .pg_nav a{
+            color: black;
+         }
+         .pg_nav a:hover{
+             color: #e86ed0;
+          }
+.icon i{
+    display: none;
+}
+/*          
+ @media(max-width: 1024px ){
+    .Ul_nav{
+         gap: 20px;
+        font-size: 20px;
+        background-color: blue;
+     }
+} 
+ @media(max-width:767px ){
+    .Ul_nav{
+        gap: 20px;
+        font-size: 19px;
+        background-color: var(--primary-color);
+          
+    }
+}  */
+ 
+ .bac{
+    transform: translateY(-10%);
+    width: 100%;
+    height: 100vh;
+    /* position:absolute; */
+    background : url("bg_1.jpg")  ;
+    background-position: 100% ;
+     
+ }
+
+ .bac_info{
+    text-align: center;
+    padding-top: 20%;
+    animation: about_Ani 1s infinite;
+  }
+  @keyframes about_Ani{
+    0%{
+        transform: translateY(50px);
+    }
+  }
+  
+ .bac_info h4{
+    font-size: 4rem;
+    font-weight: 200;
+  }
+        .section_five{
+    /* margin-top: -10px; */
+    display: flex;
+    /* background-color: aqua; */
+    margin-left: 30px;
+
+ }
+ .rigth_info{
+
+    background-color: #fefefe;
+    padding: 20px;
+    margin-top: 70px;
+    margin-left: -90px;
+    height:600px;
+    width: 100vh;
+    font-size: 18x;
+    animation: info 1.5s  infinite;
+  }
+  @keyframes info{
+    0%{
+        transform: translateY(50px);
+    }
+  }
+
+ .info_home{
+     display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+   }
+ 
+   .area{
+     display: flex;
+    gap: 10px;
+     width: 100px;
+    margin: 40px;
+     justify-content: center;
+    align-items: center;
+ }
+
+  .six{
+    /* background-color: #590648; */
+    margin-top: 10vh;
+        animation: Info_home 1s 2 ;
+
+  }
+    @keyframes Info_home{
+    0%{
+                transform: translateY(50px);
+
+    }
+   }
+ .Testi_title{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     gap: 10px;
+     margin-top: 50px;
+     color: var(--primary-color);
+ }
+ .line_l{
+border:1px solid #e86ed0; 
+width: 50px;
+ }
+ .line_r{
+    border:1px solid #e86ed0; 
+    width: 50px;
+    
+
+ }
+ .Box_client{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+ }
+ .clients{
+    width: 500px;
+    height: 260px;
+    font-size: 26px;
+    background-color: #ffffff;
+    margin-top: 60px;
+    padding: 20px;
+    box-shadow: 5px 10px 5px 1px rgba(211, 211, 211, 0.144);
+ }
+ .profile_person{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+ }
+ .profile_person img{
+border-radius: 50%;
+margin-top: 30px;
+ }
+ .name{
+    margin-top: 20px;
+ }
+ 
+     footer {
+            background-color: rgb(240, 239, 238);
+            padding: 40px 5%;
+            margin-top: 60px;
+        }
+
+        .footer_info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer_info div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer_info li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer_info li i {
+            color: #e86ed0;
+            padding-right: 8px;
+        }
+
+        .footer_info h1 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .copy {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+            color: #555;
+        }
+        
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .bac {
+    height: 70vh;
+    background-position: center;
+  }
+
+  .bac_info {
+    padding-top: 25%;
+  }
+
+  .bac_info h4 {
+    font-size: 3rem;
+  }
+
+  .section_five {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .section_five img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rigth_info {
+    width: 90%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .info_home {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .area {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .Box_client {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .clients {
+    width: 80%;
+    height: auto;
+    font-size: 20px;
+  }
+
+  .footer_info {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer_info div {
+    flex: 1 1 40%;
+  }
+}
+
+ @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bac {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .bac_info {
+    padding-top: 30%;
+  }
+
+  .bac_info h4 {
+    font-size: 2.5rem;
+  }
+
+  .section_five {
+    flex-direction: column;
+  }
+
+  .rigth_info {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    text-align: left;
+  }
+
+  .info_home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .area {
+    margin: 10px 0;
+  }
+
+  .clients {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_info div {
+    width: 100%;
+  }
+
+  .footer_info h1 {
+    font-size: 20px;
+  }
+
+  .footer_info li {
+    font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}
+.icon_menu i {
+    display: none;
+ }
+ @media (max-width: 480px) {
+  header {
+    font-size: 20px;
+  }
+
+  .bac_info h4 {
+    font-size: 2rem;
+  }
+
+  .rigth_info {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .clients {
+    font-size: 16px;
+    padding: 15px;
+  }
+.icon_menu i{
+    display: block;
+    
+}
+  .footer_info h1 {
+    font-size: 18px;
+  }
+
+  .footer_info li {
+    font-size: 14px;
+  }
+
+  .copy p {
+    font-size: 13px;
+  }
+}
+
+ 
+     </style>
+
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <h3 >Uptown</h3>
+        </div>
+       <div class="icon_menu">
+        <i class="fa-solid fa-bars">  <p style="padding-left: 10px;">M E N U</p></i> 
+         <nav>
+        
+
+            <ul class="Ul_nav">
+                <li class="Home"><a href="Uptown.html">Home</a></li>
+                <li class="pg_nav"><a href="About.html">About</a></li>
+                <li class="pg_nav"><a href="Agent.html">Agent</a></li>
+                <li class="pg_nav"><a href="Service.html">Services</a></li>
+                <li class="pg_nav"><a href="Properties.html">properties</a></li>
+                 <li class="pg_nav"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       </div>
+        
+        
+    </header>
+     <main>
+        <div class="bac">
+             <div class="bac_info">
+                <p><a href="Uptown.html">Home ></a> &nbsp; About > </p>
+                <h4>About Us</h4> 
+                 </div>
+            </div>
+
+              <section class="section_five">
+
+        <img src="bg_3" alt="" width="50%" height="750px">
+        <div class="rigth_info">
+            <h2 style="font-size: 40px;" >We Put People First.</h2>
+            <br> <br>
+            <p>A small river named Duden flows by their place and supplies
+                 it with the necessary regelialia.
+                 It is a paradisematic country, in which
+                 
+                roasted parts of sentences fly into your mouth</p>
+                <br>
+                <br>
+                <p>On her way she met a copy. The copy warned the Little Blind
+                     Text, that where it came from it would have been rewritten
+                      a thousand times and everything that was left from its
+                       origin would be the word "and" and the Little Blind
+                        Text should turn around and return to its own, safe
+                         country. But nothing the copy said could convince 
+                         her and so it didn’t take long until a few insidious
+                          Copy Writers ambushed her, made
+                     her drunk with Longe and Parole and dragged her 
+                     into their agency, where they abused her for their.</p>
+        </div>
+
+    </section>  
+     <div class="info_home">
+        <div class="area">
+            <h1 style="font-size: 50px;">305</h1>
+            <h3  >Area population</h3>
+        </div>
+         <div class="area">
+            <h1 style="font-size: 50px;">1,090</h1>
+            <h3  >Total Properties</h3>
+        </div>
+         <div class="area">
+            <h1 style="font-size: 50px;">209</h1>
+            <h3  > Average House </h3>
+        </div>
+         <div class="area">
+            <h1 style="font-size: 50px;">67</h1>
+            <h3>Total Branches  </h3>
+        </div> 
+        </div>
+         <section class="six">
+         <div class="Testi_title">
+            <div class="line_l"></div>
+            <p style="color: #e86ed0;">Testimonial</p>
+            <div class="line_r"></div>
+        </div>
+        <p style="text-align: center; font-size: 40px; margin-top: 20px;"> Happy Clients</p>
+        <div class="Box_client">
+            <div class="clients">
+            <p style="color: gray;"> Far far away, behind the word mountains,
+                far from the countries Vokalia and consonantia 
+                ther live the blind texts.
+            </p>
+                 <div class="profile_person">
+                    <img src="person_1.jpg" alt="" width="80px" >
+                    <div class="name">
+                        <h3 >Roger Scott</h3>
+                    <p style="color: gray;">marketing Manager</p>
+                    </div>
+                 </div>
+
+        </div>
+         <div class="clients">
+            <p style="color: gray;"> Far far away, behind the word mountains,
+                far from the countries Vokalia and consonantia 
+                ther live the blind texts.
+            </p>
+                 <div class="profile_person">
+                    <img src="person_1.jpg" alt="" width="80px" >
+                    <div class="name">
+                        <h3 >Roger Scott</h3>
+                    <p style="color: gray;">marketing Manager</p>
+                    </div>
+                 </div>
+        </div>
+         
+         <div class="clients">
+            <p style="color: gray;"> Far far away, behind the word mountains,
+                far from the countries Vokalia and consonantia 
+                ther live the blind texts.
+            </p>
+                 <div class="profile_person">
+                    <img src="person_1.jpg" alt="" width="80px" >
+                    <div class="name">
+                        <h3 >Roger Scott</h3>
+                    <p style="color: gray;">marketing Manager</p>
+                    </div>
+                 </div>
+        </div>
+        </div>
+    </section>  
+      </main>
+   <footer>
+                
+              <div class="footer_info">
+                <div class="Uptown">
+                    <h1>Uptown</h1>
+                    <p>Far far away, behind the word <br> mountains , far from the <br>countries 
+                    </p>
+                </div>
+                  <div class="community">
+                    <h1>community</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>Search Properties</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>For Agents </li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Reviews</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>FAQs</li>
+                </div>
+                <div class="About_US">
+                    <h1>About Us</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>Out Story</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Meet the team</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+                </div>
+                <div class="Company">
+                    <h1>Company</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>About US</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Press</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Contact</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+                </div>
+                <div class="Have_Que">
+                    <h1  >Have a Questions?</h1>
+                    <li> <i class="fa-solid fa-location-dot"></i>203 Fake St. mountain <br> &nbsp;  &nbsp; &nbsp; &nbsp; View, san francisco, California , USA</li>
+                    <li><i class="fa-solid fa-phone"></i>+252 614 3056 83</li>
+                    <li> <i class="fa-solid fa-envelope"></i>Info@ridwoabdi55.com</li>
+                </div>
+              </div>
+<div class="copy"><p>Copyright ©2025 All rights reserved | This template is made with  by Colorlib </p>     
+</div>
+
+            </footer>
+</body>
+</html>

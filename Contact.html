@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f8f9fa;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            font-size: 30px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .logo:hover {
+            color: #e86ed0;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s;
+        }
+
+        .Home a {
+            color: #e86ed0;
+        }
+
+        .pg_nav a:hover {
+            color: #e86ed0;
+        }
+
+        .bac {
+            width: 100%;
+            height: 50vh;
+            background: url("bg_1.jpg") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color: #333;
+        }
+
+        .bac_info {
+            text-align: center;
+        }
+
+        .bac_info h4 {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            gap: 50px;
+            margin: 60px auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 30px;
+            max-width: 900px;
+        }
+
+        .contact-item {
+            flex: 1;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-item p {
+            font-size: 15px;
+            color: #555;
+        }
+
+        .contact-form {
+            background: #fff;
+            max-width: 700px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .contact-form h2 {
+            text-align: center;
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .contact-form p {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            outline: none;
+            font-size: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #ff6bd6;
+        }
+
+        .btn {
+            background: #ff6bd6;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #e255bb;
+        }
+
+        footer {
+            background-color: rgb(240, 239, 238);
+            padding: 40px 5%;
+            margin-top: 60px;
+        }
+
+        .footer_info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer_info div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer_info li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer_info li i {
+            color: #e86ed0;
+            padding-right: 8px;
+        }
+
+        .footer_info h1 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .copy {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+            color: #555;
+        }
+
+         @media (max-width: 1048px) {
+            header {
+                 gap: 15px;
+                text-align: center;
+            }
+
+            nav ul {
+                 gap: 20px;
+                 font-size: 25px;
+            }
+
+            .bac {
+                height: 40vh;
+            }
+
+            .bac_info h4 {
+                font-size: 2.2rem;
+            }
+
+            .contact-info {
+                  padding: 0 20px;
+            }
+
+            .contact-form {
+                width: 90%;
+                padding: 25px;
+            }
+
+             .footer_info {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                gap: 30px;
+            }
+
+            .footer_info div {
+                width: 100%;
+            }
+
+            .copy {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h3>Uptown</h3>
+    </div>
+    <nav>
+        <ul class="Ul_nav">
+            <li class="Home"><a href="Uptown.html">Home</a></li>
+            <li class="pg_nav"><a href="About.html">About</a></li>
+            <li class="pg_nav"><a href="Agent.html">Agent</a></li>
+            <li class="pg_nav"><a href="Service.html">Services</a></li>
+            <li class="pg_nav"><a href="Properties.html">Properties</a></li>
+            <li class="pg_nav"><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="bac">
+    <div class="bac_info">
+        <p><a href="Uptown.html">Home ></a> &nbsp; Contact ></p>
+        <h4>Contact Us</h4>
+    </div>
+</div>
+
+<main>
+    <div class="contact-info">
+        <div class="contact-item">
+            <h4>Address:</h4>
+            <p>198 West 21th Street, Suite 721<br>New York NY 10016</p>
+        </div>
+
+        <div class="contact-item">
+            <h4>Phone:</h4>
+            <p>+1235 2355 98</p>
+        </div>
+
+        <div class="contact-item">
+            <h4>Email:</h4>
+            <p>info@yoursite.com</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>If you got any questions</h2>
+        <p>please do not hesitate to send us a message</p>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject" required>
+            <textarea rows="5" placeholder="Message" required></textarea>
+            <button class="btn">Send Message</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="footer_info">
+        <div class="Uptown">
+            <h1>Uptown</h1>
+            <p>Far far away, behind the word <br> mountains, far from the <br> countries.</p>
+        </div>
+        <div class="community">
+            <h1>Community</h1>
+            <li><i class="fa-solid fa-arrow-right"></i>Search Properties</li>
+            <li><i class="fa-solid fa-arrow-right"></i>For Agents</li>
+            <li><i class="fa-solid fa-arrow-right"></i>Reviews</li>
+            <li><i class="fa-solid fa-arrow-right"></i>FAQs</li>
+        </div>
+        <div class="About_US">
+            <h1>About Us</h1>
+            <li><i class="fa-solid fa-arrow-right"></i>Our Story</li>
+            <li><i class="fa-solid fa-arrow-right"></i>Meet the Team</li>
+            <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+        </div>
+        <div class="Company">
+            <h1>Company</h1>
+            <li><i class="fa-solid fa-arrow-right"></i>About Us</li>
+            <li><i class="fa-solid fa-arrow-right"></i>Press</li>
+            <li><i class="fa-solid fa-arrow-right"></i>Contact</li>
+            <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+        </div>
+        <div class="Have_Que">
+            <h1>Have a Questions?</h1>
+            <li><i class="fa-solid fa-location-dot"></i>203 Fake St. Mountain View,<br>&nbsp;&nbsp;&nbsp; San Francisco, California, USA</li>
+            <li><i class="fa-solid fa-phone"></i> +252 614 3056 83</li>
+            <li><i class="fa-solid fa-envelope"></i> Info@ridwoabdi55.com</li>
+        </div>
+    </div>
+
+    <div class="copy">
+        <p>Copyright ©2025 All rights reserved | This template is made by Colorlib</p>
+    </div>
+</footer>
+
+</body>
+</html>

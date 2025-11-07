@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+             <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+                         header{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px;
+            /* background-color: black; */
+            color: black;
+            font-size: 30px;
+            align-items: center;
+            height: 25px;
+         }
+        nav ul{
+             list-style: none;
+            display: flex;
+                         text-decoration-line: none;
+
+            gap: 25px;
+            
+        }
+         .logo:hover{
+
+            color: var(--primary-color);
+         }
+        nav li a {
+                        text-decoration-line: none;
+         }
+          
+         .Home a {
+            text-decoration: none;
+            text-decoration-line: none;
+            color: #e86ed0;
+        }  
+        
+         .pg_nav a{
+            color: black;
+         }
+         .pg_nav a:hover{
+             color: #e86ed0;
+          }
+
+         .bac{
+    transform: translateY(-10%);
+    width: 100%;
+    height: 100vh;
+    /* position:absolute; */
+    background : url("bg_1.jpg")  ;
+    background-position: 100% ;
+     
+ }
+
+ .bac_info{
+    text-align: center;
+    padding-top: 20%;
+       animation: Our_ani 1s infinite;
+
+    }
+    @keyframes our_ani{
+        0%{
+            transform: translateY(50px);
+        }
+    }
+ 
+ .bac_info h4{
+    font-size: 4rem;
+    font-weight: 200;
+ }
+ 
+ .title_serv{
+      display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+    /* font-size: 30px; */
+ }
+ .left_line{
+border:1.5px solid #e86ed0; 
+width: 200px;
+}
+
+.rigth_line{
+border:1.5px solid #e86ed0; 
+width: 200px;
+
+}
+.our_ser{
+   animation: Our_ani 1s infinite;
+
+    }
+    @keyframes Our_ani{
+        0%{
+            transform: translateY(50px);
+        }
+    } 
+ 
+.all_services{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.downBayment{
+     text-align: center;
+    /* background-color: aqua; */
+    width: 350px;
+    padding: 30px;
+}
+.downBayment h3{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.downBayment p{
+   padding-top: 5px;
+   font-size: 20px;
+   color: gray;
+} 
+.icon_ser i{
+    font-size: 70px;
+    color: #e86ed0;
+}
+ .Four{
+    display: flex;
+    padding: 50px;
+      margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+     /* background-color: rgb(193, 168, 132); */
+}
+.img_rigth{
+    background-color: rgb(188, 58, 58);
+    width: 800px;
+    background-image: url(bg_2.jpg);
+    height: 120vh;
+    color: white;
+    padding: 20px;  
+    margin-top: 50px;
+ 
+ }
+.img_rigth img{
+     width: 800px;
+    height: 122.5vh;
+    
+     
+ }
+ 
+.How_Works{
+    background-color: rgb(0, 0, 0);
+    width: 800px;
+    height: 120vh;
+          padding: 20px;  
+
+    color: white;
+    /* padding: 20px; */
+    margin-top: 50px;
+
+} 
+.num_1{
+    background-color: #e86ed0;
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+ 
+.Eva_1{
+    text-align: center;
+    width: 255px;
+    /* background-color: bisque; */
+        animation: works 1s infinite;
+
+}
+@keyframes works{
+    0%{
+        transform: translateY(50px);
+    }
+}
+.Four_part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    height: 100vh;
+    /* background-color: blueviolet; */
+    padding-top: 20px; 
+    
+}
+     footer {
+            background-color: rgb(240, 239, 238);
+            padding: 40px 5%;
+            margin-top: 60px;
+        }
+
+        .footer_info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer_info div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer_info li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer_info li i {
+            color: #e86ed0;
+            padding-right: 8px;
+        }
+
+        .footer_info h1 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .copy {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+            color: #555;
+        }
+
+ 
+ 
+ @media (max-width: 992px) {
+    header {
+         font-size: 24px;
+ 
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .bac_info {
+        padding-top: 30%;
+    }
+
+    .all_services {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .downBayment {
+        width: 45%;
+    }
+
+    .Four {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_rigth, .How_Works {
+        width: 90%;
+        height: auto;
+    }
+    .img_rigth{
+        opacity: 0;
+    }
+    .How_Works{
+         
+        background-color: aqua;
+    background-image: url(bg_2.jpg);
+     }
+
+    .Four_part {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-left: 30%;
+    }
+  .footer_info {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                gap: 30px;
+            }
+
+            .footer_info div {
+                width: 100%;
+            }
+
+            .copy {
+                font-size: 14px;
+                margin-top: 20px;
+            }
+}
+
+ @media (max-width: 768px) {
+    header {
+         font-size: 12px;
+         display: flex;
+         background-color: #e86ed0;
+          
+          
+
+    }
+
+    nav ul {
+         gap: 20px;
+         background-color: aqua;
+    }
+
+    .bac_info {
+        padding-top: 40%;
+    }
+
+    .bac_info h4 {
+        font-size: 2.5rem;
+    }
+
+    .all_services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .downBayment {
+        width: 80%;
+    }
+
+    .Four {
+         padding: 0px;
+         text-align: center;
+     }
+
+    .img_rigth, .How_Works {
+        width: 100%;
+        margin-top: 20px;
+         
+        
+    }
+     .How_Works{
+        background-color: aqua;
+    background-image: url(bg_2.jpg);
+     }
+
+    .Four_part {
+        grid-template-columns: 1fr;
+     }
+
+    .footer_info {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .footer_info > div {
+        width: 100%;
+    }
+
+    .footer_info h1 {
+        font-size: 22px;
+    }
+
+    .footer_info li {
+        font-size: 16px;
+    }
+}
+
+/* Small_Phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .header{
+        display: flex;
+    }
+    .bac_info h4 {
+        font-size: 2rem;
+    }
+
+    .downBayment h3 {
+        font-size: 22px;
+    }
+
+    .downBayment p {
+        font-size: 16px;
+    }
+
+    .num_1 {
+        width: 70px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .num_1 h1 {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .copy p {
+        font-size: 14px;
+    }
+}
+
+    </style>
+</head>
+<body>
+     <header>
+        <div class="logo">
+            <h3 >Uptown</h3>
+        </div>
+        <nav>
+        <!-- <div class="icon"><i class="fa-solid fa-bars">  <p style="padding-left: 10px;">M E N U</p></i>  -->
+
+            <ul class="Ul_nav">
+                <li class="Home"><a href="Uptown.html">Home</a></li>
+                <li class="pg_nav"><a href="About.html">About</a></li>
+                <li class="pg_nav"><a href="Agent.html">Agent</a></li>
+                <li class="pg_nav"><a href="Service.html">Services</a></li>
+                <li class="pg_nav"><a href="Properties.html">properties</a></li>
+                 <li class="pg_nav"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </header> 
+         <main>
+            <div class="bac">
+             <div class="bac_info">
+                <p><a href="Uptown.html">Home ></a> &nbsp; Services > </p>
+                <h4>Services</h4> 
+                 </div>
+            </div>
+              <div class="our_ser">
+        <div class="title_serv">
+            <div class="left_line"></div>
+            <p>OUR SERVICES</p>
+            <div class="rigth_line"></div>
+        </div>
+        <h1 style="text-align: center; margin-top: 20px; font-size: 50px; font-weight: 200;">The smartest way to buy a home</h1>
+        <div class="all_services">
+            <div class="downBayment">
+                <div class="icon_ser">
+                 <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                </div>
+                <h3>No Downpayment</h3>
+            <p>A small river named Duden
+                flows by their place and supplies it with 
+                the necessary regelialia.</p>
+            </div>
+             
+            <div class="downBayment">
+                <div class="icon_ser">
+                 <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                </div>
+                <h3>No Downpayment</h3>
+            <p>A small river named Duden
+                flows by their place and supplies it with 
+                the necessary regelialia.</p>
+            </div>
+            <div class="downBayment">
+                <div class="icon_ser">
+                 <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                </div>
+                <h3>No Downpayment</h3>
+            <p>A small river named Duden
+                flows by their place and supplies it with 
+                the necessary regelialia.</p>
+            </div>
+            <div class="downBayment">
+                <div class="icon_ser">
+                 <i class="fa-solid fa-file-invoice-dollar"></i>
+
+                </div>
+                <h3>No Downpayment</h3>
+            <p>A small river named Duden
+                flows by their place and supplies it with 
+                the necessary regelialia.</p>
+            </div>
+        </div>
+         </div>
+          <section class="Four">
+        <div class="How_Works">
+              <div class="title_serv">
+            <div class="left_line"></div>
+            <p>WORK FLOW</p>
+            <div class="rigth_line"></div>
+        </div>
+        <h2 style="text-align: center; margin-top: 40px;">Work flow How it works</h2>
+        <div class="Four_part">
+            <div class="Eva_1">
+            <div class="num_1">
+            <h1 style="text-align: center; padding: 30px;">01</h1>
+        </div>
+        <h2>Evaluate Property</h2>
+        <p>A small river named Duden flows by their place and 
+            supplies it with the necessary regelialia.</p>
+        </div>
+
+         <div class="Eva_1">
+            <div class="num_1">
+            <h1 style="text-align: center; padding: 30px;">02</h1>
+        </div>
+
+        <h2>Evaluate Property</h2>
+        <p>A small river named Duden flows by their place and 
+            supplies it with the necessary regelialia.</p>
+        </div>
+
+         <div class="Eva_1">
+            <div class="num_1">
+            <h1 style="text-align: center; padding: 30px;">03</h1>
+        </div>
+        <h2>Evaluate Property</h2>
+        <p>A small river named Duden flows by their place and 
+            supplies it with the necessary regelialia.</p>
+        </div>
+
+         <div class="Eva_1">
+            <div class="num_1">
+            <h1 style="text-align: center; padding: 30px;">04</h1>
+        </div>
+        <h2>Evaluate Property</h2>
+        <p>A small river named Duden flows by their place and 
+            supplies it with the necessary regelialia.</p>
+        </div>
+        </div>
+        
+        </div>
+        <div class="img_rigth">
+         </div>
+        
+
+    </section>
+            </main>
+              <footer>
+                
+              <div class="footer_info">
+                <div class="Uptown">
+                    <h1>Uptown</h1>
+                    <p>Far far away, behind the word <br> mountains , far from the <br>countries 
+                    </p>
+                </div>
+                  <div class="community">
+                    <h1>community</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>Search Properties</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>For Agents </li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Reviews</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>FAQs</li>
+                </div>
+                <div class="About_US">
+                    <h1>About Us</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>Out Story</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Meet the team</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+                </div>
+                <div class="Company">
+                    <h1>Company</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>About US</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Press</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Contact</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+                </div>
+                <div class="Have_Que">
+                    <h1  >Have a Questions?</h1>
+                    <li> <i class="fa-solid fa-location-dot"></i>203 Fake St. mountain <br> &nbsp;  &nbsp; &nbsp; &nbsp; View, san francisco, California , USA</li>
+                    <li><i class="fa-solid fa-phone"></i>+252 614 3056 83</li>
+                    <li> <i class="fa-solid fa-envelope"></i>Info@ridwoabdi55.com</li>
+                </div>
+              </div>
+<div class="copy"><p>Copyright ©2025 All rights reserved | This template is made with  by Colorlib </p>     
+</div>
+
+            </footer>
+</body>
+</html>

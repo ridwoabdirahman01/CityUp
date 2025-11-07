@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+            header{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px; 
+            /* background-color: black; */
+            color: black;
+            font-size: 30px;
+            align-items: center;
+            height: 25px;
+              
+             
+        }
+        nav ul{
+             list-style: none;
+            display: flex;
+             
+            gap: 25px;
+            
+        }
+         
+         .logo:hover{
+            color: var(--primary-color);
+         }
+          nav li a {
+                        text-decoration-line: none;
+         }
+          
+         .Home a {
+            text-decoration: none;
+            text-decoration-line: none;
+            color: #e86ed0;
+        }  
+        
+         .pg_nav a{
+            color: black;
+         }
+         .pg_nav a:hover{
+             color: #e86ed0;
+          }
+        
+         .bac{
+    transform: translateY(-10%);
+    width: 100%;
+    height: 100vh;
+    /* position:absolute; */
+    background : url("bg_1.jpg")  ;
+    background-position: 100% ;
+     
+ }
+
+ .bac_info{
+    text-align: center;
+    padding-top: 20%;
+    animation: agent_ani 1s infinite;
+ }
+ @keyframes agent_ani{
+    0%{
+        transform: translateY(50px);
+    }
+ }
+ .bac_info h4{
+    font-size: 4rem;
+    font-weight: 200;
+ }
+ .team1{
+    margin-left: 12px;
+    margin-bottom: 20px;
+ }
+ .team1 img:hover{
+    animation: img_ani 1s infinite;
+ }
+ @keyframes img_ani{
+    0%{
+        transform:  scale(1.1);
+    }
+ }
+.box_info{
+    background-color: #dfdfdf;
+    width: 60%;
+    margin-left: 30px;
+    z-index: 1;
+    position: relative;
+    margin-top: -40px;
+    padding: 25px;
+}
+
+.teams{
+    margin-top: 60px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4,1fr);
+     
+}
+     footer {
+            background-color: rgb(240, 239, 238);
+            padding: 40px 5%;
+            margin-top: 60px;
+        }
+
+        .footer_info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .footer_info div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer_info li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .footer_info li i {
+            color: #e86ed0;
+            padding-right: 8px;
+        }
+
+        .footer_info h1 {
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+
+        .copy {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 30px;
+            color: #555;
+        }
+        
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .bac {
+    height: 70vh;
+    background-position: center;
+  }
+
+  .bac_info {
+    padding-top: 25%;
+  }
+
+  .bac_info h4 {
+    font-size: 3rem;
+  }
+
+  .teams {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .team1 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .box_info {
+    width: 85%;
+    margin-left: 7.5%;
+    padding: 20px;
+  }
+
+  .footer_info {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer_info div {
+    flex: 1 1 40%;
+  }
+}
+
+ @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .bac {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .bac_info {
+    padding-top: 30%;
+  }
+
+  .bac_info h4 {
+    font-size: 2.5rem;
+  }
+
+  .teams {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .team1 {
+    margin-left: 0;
+  }
+
+  .team1 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .box_info {
+    width: 80%;
+    margin: -30px auto 20px;
+    padding: 15px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer_info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_info div {
+    width: 100%;
+  }
+
+  .footer_info h1 {
+    font-size: 20px;
+  }
+  
+  .footer_info li {
+    font-size: 16px;
+  }
+
+  .copy {
+    font-size: 14px;
+  }
+}
+
+ @media (max-width: 480px) {
+  header {
+    font-size: 20px;
+  }
+
+  .bac_info h4 {
+    font-size: 2rem;
+  }
+
+  .box_info {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .footer_info h1 {
+    font-size: 18px;
+  }
+
+  .footer_info li {
+    font-size: 14px;
+  }
+
+  .copy p {
+    font-size: 13px;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3 >Uptown</h3>
+        </div>
+        <nav>
+        <!-- <div class="icon"><i class="fa-solid fa-bars">  <p style="padding-left: 10px;">M E N U</p></i>  -->
+
+            <ul class="Ul_nav">
+                <li class="Home"><a href="Uptown.html">Home</a></li>
+                <li class="pg_nav"><a href="About.html">About</a></li>
+                <li class="pg_nav"><a href="Agent.html">Agent</a></li>
+                <li class="pg_nav"><a href="Service.html">Services</a></li>
+                <li class="pg_nav"><a href="Properties.html">properties</a></li>
+                 <li class="pg_nav"><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </header> 
+         <main>
+            <div class="bac">
+             <div class="bac_info">
+                <p><a href="Uptown.html">Home ></a> &nbsp; Agent > </p>
+                <h4>Agent</h4> 
+                 </div>
+            </div>
+            <section class="seven">
+       
+      <div class="teams">
+        <div class="team1">
+        <img src="team-1.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-2.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-3.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-4.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-1.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-2.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-4.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      <div class="team1">
+        <img src="team-2.jpg" alt="" width="300px " height="400px">
+        <div class="box_info">
+        <h3 style="font-size: 25px;"> James Stallon </h3> 
+        <p >Listing-- 10 properties</p>
+       </div>
+      </div>
+      </div>
+
+    </section>
+       
+         </main>
+   <footer>
+                
+              <div class="footer_info">
+                <div class="Uptown">
+                    <h1>Uptown</h1>
+                    <p>Far far away, behind the word <br> mountains , far from the <br>countries 
+                    </p>
+                </div>
+                  <div class="community">
+                    <h1>community</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>Search Properties</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>For Agents </li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Reviews</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>FAQs</li>
+                </div>
+                <div class="About_US">
+                    <h1>About Us</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>Out Story</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Meet the team</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+                </div>
+                <div class="Company">
+                    <h1>Company</h1>
+                    <li><i class="fa-solid fa-arrow-right"></i>About US</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Press</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Contact</li>
+                    <li><i class="fa-solid fa-arrow-right"></i>Careers</li>
+                </div>
+                <div class="Have_Que">
+                    <h1  >Have a Questions?</h1>
+                    <li> <i class="fa-solid fa-location-dot"></i>203 Fake St. mountain <br> &nbsp;  &nbsp; &nbsp; &nbsp; View, san francisco, California , USA</li>
+                    <li><i class="fa-solid fa-phone"></i>+252 614 3056 83</li>
+                    <li> <i class="fa-solid fa-envelope"></i>Info@ridwoabdi55.com</li>
+                </div>
+              </div>
+<div class="copy"><p>Copyright ©2025 All rights reserved | This template is made with  by Colorlib </p>     
+</div>
+
+            </footer>
+
+</body>
+</html>
