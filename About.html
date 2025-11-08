@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> -->
 
     <title>Document</title>
-        <!-- <link rel="stylesheet" href="style.css"> -->
+        <link rel="stylesheet" href="style.css">
        
      <style>
         *{
@@ -25,7 +25,7 @@
             font-size: 20px;
             align-items: center;
             height: 25px;
-            font-size: 30px;
+            font-size: 20px;
              
              
         }
@@ -44,7 +44,7 @@
                         text-decoration-line: none;
          }
           
-         .Home a {
+         .About a {
             text-decoration: none;
             text-decoration-line: none;
             color: #e86ed0;
@@ -83,13 +83,14 @@
     /* position:absolute; */
     background : url("bg_1.jpg")  ;
     background-position: 100% ;
+    margin-top: -40px;
      
  }
 
  .bac_info{
     text-align: center;
     padding-top: 20%;
-    animation: about_Ani 1s infinite;
+    animation: about_Ani 1s  ;
   }
   @keyframes about_Ani{
     0%{
@@ -117,7 +118,7 @@
     height:600px;
     width: 100vh;
     font-size: 18x;
-    animation: info 1.5s  infinite;
+    animation: info 1.5s   ;
   }
   @keyframes info{
     0%{
@@ -143,7 +144,7 @@
   .six{
     /* background-color: #590648; */
     margin-top: 10vh;
-        animation: Info_home 1s 2 ;
+        animation: Info_home 1s 1 ;
 
   }
     @keyframes Info_home{
@@ -239,16 +240,12 @@ margin-top: 30px;
         
 @media (max-width: 992px) {
   header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
+     gap: 10px;
+     display: flex;
   }
 
   nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+     gap: 15px;
   }
 
   .bac {
@@ -316,92 +313,23 @@ margin-top: 30px;
     flex: 1 1 40%;
   }
 }
-
- @media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-    font-size: 22px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .bac {
-    height: 60vh;
-    background-size: cover;
-  }
-
-  .bac_info {
-    padding-top: 30%;
-  }
-
-  .bac_info h4 {
-    font-size: 2.5rem;
-  }
-
-  .section_five {
-    flex-direction: column;
-  }
-
-  .rigth_info {
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-    text-align: left;
-  }
-
-  .info_home {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .area {
-    margin: 10px 0;
-  }
-
-  .clients {
-    width: 95%;
-    font-size: 18px;
-  }
-
-  footer {
-    padding: 30px 20px;
-  }
-
-  .footer_info {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer_info div {
-    width: 100%;
-  }
-
-  .footer_info h1 {
-    font-size: 20px;
-  }
-
-  .footer_info li {
-    font-size: 16px;
-  }
-
-  .copy {
-    font-size: 14px;
-  }
-}
+ 
 .icon_menu i {
     display: none;
  }
  @media (max-width: 480px) {
   header {
+text-align: left;
     font-size: 20px;
+    display: flex;
   }
-
+  .logo{
+    color: yellow;
+    text-align: left;
+  }
+nav ul{
+    display: none;
+}
   .bac_info h4 {
     font-size: 2rem;
   }
@@ -437,7 +365,7 @@ margin-top: 30px;
 
 </head>
 <body>
-     <header>
+     <header style="margin-left:40px ; margin-right: 40px; ">
         <div class="logo">
             <h3 >Uptown</h3>
         </div>
@@ -447,8 +375,8 @@ margin-top: 30px;
         
 
             <ul class="Ul_nav">
-                <li class="Home"><a href="Uptown.html">Home</a></li>
-                <li class="pg_nav"><a href="About.html">Abohut</a></li>
+                <li class="pg_nav"><a href="index.html ">Home</a></li>
+                <li class="About"><a href="About.html">About</a></li>
                 <li class="pg_nav"><a href="Agent.html">Agent</a></li>
                 <li class="pg_nav"><a href="Service.html">Services</a></li>
                 <li class="pg_nav"><a href="Properties.html">properties</a></li>
